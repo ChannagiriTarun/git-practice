@@ -1,0 +1,11 @@
+default_language_version:
+  python: python3
+repos:
+- repo: local
+  hooks:
+  - id: pytest
+    name: Run tests (pytest)
+    entry: pytest -x
+    language: system
+    types: [python]
+    pass_filenames: false
